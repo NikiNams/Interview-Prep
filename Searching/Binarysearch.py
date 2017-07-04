@@ -11,9 +11,13 @@ def binary_search(arr,x, start, end):
 	else:
 		return(-1)
 
+print("Enter the length of array")
 n = int(input())
+print("Enter the array")
 a = [int(arr_temp) for arr_temp in input().strip().split(' ')] #Taking input as array/list
+print("Enter the element to be searched for")
 x=int(input())
+
 
 length = len(a)-1 #Finding the length to pass it as the last index of the array
 result = binary_search(a,x,0,length)
